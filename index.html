@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <link rel="stylesheet" type='text/css' href="https://fontawesome.com/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
+      
     <div class="info">
         <h3>Open Hours: Mon - Fri 8.00 am - 6.00 pm</h3>
         <h3>On Social</h3>
@@ -22,7 +26,43 @@
     </div>
     <div class="nav">
         <img src="logo.png" alt="Logo">
-    
+        <i class="fa-solid fa-phone"></i>
+        <h3>+383 44 111 222</h3>
+        <i class="fa-solid fa-envelope"></i>
+        <input type="text" id="fname" name="fname" placeholder="Search..."><br>
+        <i class="fa-solid fa-magnifying-glass"></i> 
     </div>
+
+    <div class="rezervimi">
+        <div class="vendi">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <label for="country">Choose a country</label>
+        <select id="country" name="country" >
+        <option value="kosovo">Kosovo</option>
+        <option value="albania">Albania</option>
+        <option value="bansko">Bansko</option>
+        <option value="germany">Germany</option>
+        </select>
+        </div>
+        <div class="personat">
+            <i class="fa-solid fa-user"></i>
+            <select id="person" name="person" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                </select>
+        </div>
+        <div class="data">
+            <i class="fa-regular fa-calendar-days"></i>
+            <input type="datetime-local">
+        </div>
+        <div class="kerko">
+            <button type="button">Search</button>
+        </div>
+    </div>
+
+
 </body>
 </html>
