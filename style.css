@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ 
 
-body{
-    background-image: url("skijimi.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+ /* Desktop, Tablet, and Mobile */
+
+
+
+
+ * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+     a{
+        text-decoration: none;
      }
