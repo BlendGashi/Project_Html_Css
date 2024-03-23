@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="png" href="./logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Travel agency</title>
 </head>
 <body>
-<section id="container">     
+
+
+<section id="info">     
     <div class="container">
-        <h3>Open Hours: Mon - Fri 8.00 am - 6.00 pm</h3>
-        <h3>On Social</h3>
-        <a href="https://www.facebook.com/">
+
+        <div class="clock">
+        <i class="fa-regular fa-clock"></i>
+        <h4>Open Hours: Mon - Fri 8.00 am - 6.00 pm</h4>
+        </div>
+
+        <div class="social">
+        <h4>On Social</h4>
+        <a href="https://www.facebook.com/"></a>
             <i class="devicon-facebook-plain colored"></i>
-        </a>
         <a href="https://twitter.com/%22%22">
             <i class="devicon-twitter-original colored"></i></a>
-        <a href="https://www.linkedin.com/feed/">
-            <i class="devicon-linkedin-plain colored"></i>
-          </a>
+        <a href="https://www.linkedin.com/feed/"></a>
+            <i class="devicon-linkedin-plain colored"></i>     
+        </div> 
+    
     </div>
 </section>
 
@@ -32,8 +41,11 @@
     <i class="fa-solid fa-phone"></i>
     <h3>+383 44 111 222</h3>
     <i class="fa-solid fa-envelope"></i>
+    <div class="search"></div>
     <input type="text" id="fname" name="fname" placeholder="Search..."><br>
-    <i class="fa-solid fa-magnifying-glass"></i> 
+    <div class="searching">
+        <i class="fa-solid fa-magnifying-glass"></i> 
+    </div>
 </div>
 
 <header id="header">
@@ -69,7 +81,9 @@
 <section id="rezervimi">
     <div class="container">
         <div class="vendi">
-        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="searching">
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </div>
 
         <label for="country">Choose a country</label>
         <select id="country" name="country" >
@@ -119,6 +133,7 @@
     <img src="about-2.jpg">
     <img src="about-3.jpg">
     </div>
+ </div>
 </section>
 
 
@@ -281,21 +296,21 @@
     <div class="container">
     <div class="blog1">
         <img src="blog1.jpg">
-        <button type="button" >Travel Blog</button>
+        <button class="button" type="button" >Travel Blog</button>
         <i class="fa-regular fa-calendar-days"></i>
         <p>December 5, 2023</p>
         <h4>Find who are giving service Booking travel during Corona</h4>
     </div>
     <div class="blog2">
         <img src="blog2.jpg">
-        <button type="button" >Travel Blog</button>
+        <button class="button" type="button" >Travel Blog</button>
         <i class="fa-regular fa-calendar-days"></i>
         <p>December 5, 2023</p>
         <h4>Exploring Bangladesh’s rich history: Eliza Binte Elahi</h4>
     </div>
     <div class="blog3">
         <img src="blog3.jpg">
-        <button type="button" >Travel Blog</button>
+        <button class="button" type="button" >Travel Blog</button>
         <i class="fa-regular fa-calendar-days"></i>
         <p>December 5, 2023</p>
         <h4>7 movies that make you want to pack your bags and travel</h4>
