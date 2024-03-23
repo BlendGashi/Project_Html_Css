@@ -1,9 +1,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
- 
-
  /* Desktop, Tablet, and Mobile */
 
-
+ .container{
+    width: 1200px;
+    margin: 0px auto
+ }
 
 
  * {
@@ -14,3 +15,13 @@
      a{
         text-decoration: none;
      }
+
+      /* Mobile */
+ @media screen and (max-width: 500px) {
+}
+/* Tabel */
+@media screen and (max-width: 500px) {
+}
+/* Desktop */
+@media screen and (max-width: 500px) {
+}
