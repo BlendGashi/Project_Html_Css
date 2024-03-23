@@ -1,6 +1,26 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
- /* Desktop, Tablet, and Mobile */
 
+ :root {
+    --orange:#ff6b00;
+    --dark: #262626;
+    --yellow: #ffc42e;
+    --nav-color: #fff5ed;
+    --bg-color:#f0f5f9;
+}
+
+@font-face {
+    font-family: "Pacifico", cursive;
+    color: var(--yellow);
+    src: url();
+}
+
+h3{
+    font-family: pacifico;
+    color: var(--yellow);
+}
+
+
+ /* Desktop, Tablet, and Mobile */
  .container{
     width: 1200px;
     margin: 0px auto
@@ -16,12 +36,102 @@
         text-decoration: none;
      }
 
-      /* Mobile */
- @media screen and (max-width: 500px) {
+.packages{
+    background-color: var(--bg-color);
+}
+
+.button{
+    padding: 3px 13px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 107, 0, 0.20);
+    background: rgba(255, 107, 0, 0.05);
+    color: #ff6b00;
+    text-decoration: none;
+
+    &:hover{
+        color: #fff;
+        background-color: #ff6b00;
+    }
+}
+
+.fa-calendar-days
+{
+    color: #ff6b00;
+}
+
+.fa-phone{
+    color: #ff6b00;
+}
+
+.fa-envelope{
+    color: #ff6b00;
+}
+
+.fa-clock{
+    color: #ff6b00;
+}
+
+/* .fa-magnifying-glass{
+    color: #ff6b00;
+          &:hover{
+             color: white;
+         }
+} */
+
+.searching{
+    padding: 1px;
+    width: 18px;
+    height: 18px;
+    border: 0px;
+    color:var(--orange);
+
+    &:hover{
+        color:white;
+        background-color: var(--orange);
+    }
+}
+ 
+
+header{
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+#info{
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+#aboutus{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Mobile */
+ @media screen and (max-width: 768px) {
 }
 /* Tabel */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 768px) {
 }
 /* Desktop */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 1200px) {
+
+    .container{
+        width: 1200px; 
+    }
+
+    section, 
+    footer {
+        padding: 90px 0px;
+    }
 }
