@@ -6,6 +6,8 @@
     --yellow: #ffc42e;
     --nav-color: #fff5ed;
     --bg-color:#f0f5f9;
+    --info:#222121;
+    
 }
 
 @font-face {
@@ -14,11 +16,18 @@
     src: url();
 }
 
+a{
+    text-decoration: none;
+}
+
 h3{
     font-family: pacifico;
     color: var(--yellow);
 }
 
+h4{
+    color: #fff;
+}
 
  /* Desktop, Tablet, and Mobile */
  .container{
@@ -32,9 +41,9 @@ h3{
     padding: 0px;
     margin: 0px;
 }
-     a{
-        text-decoration: none;
-     }
+a{
+    text-decoration: none;
+}
 
 .packages{
     background-color: var(--bg-color);
@@ -73,6 +82,14 @@ h3{
     color: #ff6b00;
 }
 
+.fa-magnifying-glass{
+    color: #ff6b00;
+}
+
+.fa-user{
+    color: #ff6b00;
+}
+
 /* .fa-magnifying-glass{
     color: #ff6b00;
           &:hover{
@@ -93,21 +110,86 @@ h3{
     }
 }
  
+.info{
+    background-color: var(--info);
+    
+    display: flex;
+    align-items: center;
 
-header{
+    .container{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .clock{
+            display: flex;
+        }
+
+        .social{
+            display: flex;
+
+        }
+    }
+}
+
+#call{
     .container{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .phone{
+        display: flex;
+        align-items: center;
+        margin: 0px 20px;
     }
 }
 
 
-
-#info{
+header{
     .container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        background-color: var(--nav-color);
+
+        .user{margin: 0px 50px;}
     }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding: 30px 30px 30px 30px;
+        align-items: center;
+        
+
+        li{
+            margin: 0px 30px;
+        }
+
+        a{
+            color: var(--info);
+            &:hover{
+                color: var(--orange);
+                  }
+         }
+     }
+
+    .submenu{
+        display: none;
+        
+    }
+}
+
+#rezervimi{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+
 }
 
 
@@ -132,6 +214,6 @@ header{
 
     section, 
     footer {
-        padding: 90px 0px;
+        
     }
 }
