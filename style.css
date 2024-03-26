@@ -240,19 +240,19 @@ header{
                 height: 200px;
                 width: 200px;
             }
-        
+
         .foto1{
-            img
-            {
+            img{
             border-radius: 50%;
             width:auto;
         }
         }    
+        .aboutus{
         .international{
             .foto1{
                 display: flex;
                 justify-content: space-between;
-            }
+            }}
             
             }
         }
@@ -454,7 +454,7 @@ footer{
         justify-content: space-around;
         
 
-        a.{
+        a{
             font-family: pacifico;
             
         }
