@@ -231,29 +231,52 @@ header{
 
 
 #aboutus{
+    background-color: #e8ecf0;
     .container{
-        display: flex;
-    justify-content: center;
+        padding-top: 50px;
 
+        .vendet{
+            img{
+                height: 200px;
+                width: 200px;
+            }
+        
+        .foto1{
+            img
+            {
+            border-radius: 50%;
+            width:auto;
+        }
+        }    
+        .international{
+            .foto1{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            }
+        }
+        .center{
+            text-align: center;
+        }
+        display: flex;
+        justify-content: center;
     .aboutus{
         p{
         font-family: "Quicksand", sans-serif;
 
     }
-        
-        
     }
     }
 }
 
-hgroup{
-    align-items: center;
-}
+
 
 .methods{ 
     margin: 30px 0px;
 
     .container{ 
+        .center{text-align: center;}
         p{
             font-family: "Quicksand", sans-serif;
         }
@@ -279,6 +302,7 @@ hgroup{
 
 .packages{padding: 40px;
     .container{
+        .center{text-align: center;}
         .vendet{
             .india2{
             background-color: #fff;
@@ -345,6 +369,7 @@ hgroup{
 .top{
     padding-top: 80px;
     .container{
+        .center{text-align: center;}
        
         .vendett{
             display: grid;
@@ -370,6 +395,7 @@ hgroup{
 
 .blog{
     .container{
+        .center{text-align: center;}
         margin-top: 50px;
         .blogee{
             display: grid;
