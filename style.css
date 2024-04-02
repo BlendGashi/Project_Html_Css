@@ -490,8 +490,9 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         .phone{
+            display: flex;
+            justify-content: space-around;
             h3{
-                
                 font-size: 10px;
             }
         }
@@ -502,6 +503,16 @@ footer{
 header{
     nav{
         display: none;
+    }
+}
+
+#rezervimi{
+    .container{
+display: flex;
+justify-content:space-evenly ;
+
+        /* display: grid;
+        grid-template-columns: repeat(4, 1fr); */
     }
 }
 
@@ -521,6 +532,8 @@ header{
 
 .top{
     .container{
+        margin-left: -1px;
+        
         .vendett{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
