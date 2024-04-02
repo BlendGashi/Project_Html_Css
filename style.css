@@ -7,7 +7,6 @@
     --nav-color: #fff5ed;
     --bg-color:#f0f5f9;
     --info:#222121;
-    
 }
 
 @font-face {
@@ -33,7 +32,6 @@ h4{
  .container{
     width: 80%px;
     margin: 0px auto;
-    
  }
 
 
@@ -195,10 +193,8 @@ header{
                             color:var(--orange);
                         }
                     }
-                    
                 }
             }
-
             &:hover ul {
                 display: block;
             }
@@ -223,7 +219,7 @@ header{
 #rezervimi{
     .container{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 20px auto;
     }
 
@@ -233,38 +229,40 @@ header{
 #aboutus{
     background-color: #e8ecf0;
     .container{
-        padding-top: 50px;
+        padding: 50px 0px;
+        display: flex;
+        justify-content: center;
+
 
         .vendet{
+            
             img{
                 height: 200px;
                 width: 200px;
             }
-
+        }
         .foto1{
             img{
             border-radius: 50%;
-            width:auto;
+            
         }
-        }    
+        }
         .aboutus{
         .international{
             .foto1{
                 display: flex;
-                justify-content: space-between;
-            }}
-            
+                
             }
-        }
+        }    
+            }
+        
         .center{
             text-align: center;
         }
-        display: flex;
-        justify-content: center;
+        
     .aboutus{
         p{
         font-family: "Quicksand", sans-serif;
-
     } 
     }
     }
@@ -280,7 +278,7 @@ header{
         p{
             font-family: "Quicksand", sans-serif;
         }
-        
+
         }
             
        .pagesat{
@@ -300,16 +298,22 @@ header{
               }
             }
 
-.packages{padding: 40px;
+.packages{
+    padding: 40px;
     .container{
-        .center{text-align: center;}
+        .center{
+            text-align: center;
+        }
         .vendet{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             .india2{
             background-color: #fff;
             margin: 15px 0px;
-            border-radius: 10px;}
-
-        }
+            border-radius: 10px;
+                   }
+              }
+    }
         
         ul{
             display: flex;
@@ -340,21 +344,23 @@ header{
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             
-
-            .ora{display: flex;
+            .ora{
+                display: flex;
                 margin: 2px;
                 gap: 10px;
                 
                 h3{
                     font-family: "Open Sans", sans-serif;
                     color:#2596be;
-                }
+                  }
                 }
 
             .madhesia{
                 width: 250px;
                 height: 250px;
                 margin: 15px;
+                border-radius: 10px;
+                
                 
                 &:hover{
                     transform: scale(1.1);
@@ -362,9 +368,7 @@ header{
             }
             
         }
-    }
-
-   
+    
 
 .top{
     padding-top: 80px;
@@ -464,15 +468,236 @@ footer{
 
 /* Mobile */
  @media screen and (max-width: 768px) {
+
+.container{
+    width: 70%;
 }
-/* Tabel */
+
+.info{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        h4{
+            font-size: 10px;
+        }
+    }
+}
+
+#call{
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .phone{
+            h3{
+                
+                font-size: 10px;
+            }
+        }
+        
+    }
+}
+
+header{
+    nav{
+        display: none;
+    }
+}
+
+.packages{
+    .container{
+        .place{
+            ul{
+                display: none;
+            }
+        }
+        .vendet{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.top{
+    .container{
+        .vendett{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+
+
+#aboutus{
+    .container{
+        width: 100%;
+        .aboutus{
+    }
+        .vendet{
+            img{
+                display: none;
+        }
+    }
+}
+}
+
+
+.methods{
+    .container{
+        width: 80%;
+           .pagesat{
+                    display: grid;
+                   grid-template-columns: repeat(2, 2fr);
+        }
+    }
+}
+
+.blog{
+    .container{
+        .blogee{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            img{
+                width: 150px;
+                height: 150px;
+            }
+
+        }
+    }
+}
+
+footer{
+    .container{
+        padding-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .projects{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .social{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+}
+
+
+
+/* Tabelet */
 @media screen and (min-width: 768px) {
+
+.info{
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
+#aboutus{
+    .container{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+
+        .aboutus{
+            display: grid;
+                grid-template-columns: repeat(1,2fr);
+            }
+        }
+        .vendet{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+        }
+    }
+
+
+.packages{
+    .container{
+        width: 90%;
+        .vendet{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+               }
+             }
+}
+
+.top{
+    .container{
+            width: 90%;
+            
+        .vendett{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+                }
+             }
+   }
+
+.blog{
+    .container{ 
+        width: 80%;
+        align-items: center;
+
+        .blogee{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        .blog1{
+            
+              }
+              }
+             }
+    }
+
+footer{
+    .container{
+        padding: 40px;
+              }
+      }
+    }
+
+
+
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1350px) {
 
     .container{
         width: 1200px; 
+    }
+
+    .packages{
+        .container{
+            .vendet{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+
+    .top{
+        .container{
+            .vendett{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+
+    .blog{
+        .container{
+            .blogee{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
     }
 
     section,
