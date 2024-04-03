@@ -142,6 +142,11 @@ a{
         display: flex;
         justify-content: space-between;
         padding: 5px;
+
+        #menu-toggler,
+        .menu-toggler-icon{
+            display: none;
+        }
     }
 
     .phone{
@@ -161,6 +166,8 @@ header{
 
         .user{margin: 0px 50px;}
     }
+
+    
 
     ul{
         display: flex;
@@ -489,6 +496,41 @@ footer{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+
+ nav {
+        margin-top: 20px;
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    .menu-toggler-icon {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #menu-toggler {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+        background-color: rgba(45, 45, 45, 0);
+        border: none;
+        outline: none;
+        appearance: none;
+        width: 32px;
+        height: 32px;
+    }
+
+    #menu-toggler:checked+nav {
+        display: block;
+    }
+
         .phone{
             display: flex;
             justify-content: space-around;
@@ -504,31 +546,33 @@ header{
     nav{
         display: none;
     }
+
+   
 }
+
 
 #rezervimi{
     .container{
 display: flex;
 justify-content:space-evenly ;
 
-        /* display: grid;
-        grid-template-columns: repeat(4, 1fr); */
-    }
-}
+        
+               }
+         }
 
 .packages{
     .container{
         .place{
             ul{
                 display: none;
-            }
-        }
+              }
+              }
         .vendet{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-        }
-    }
-}
+               }
+               }
+         }
 
 .top{
     .container{
@@ -537,9 +581,9 @@ justify-content:space-evenly ;
         .vendett{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-        }
+                }
+              }
     }
-}
 
 
 
@@ -554,7 +598,7 @@ justify-content:space-evenly ;
         }
     }
 }
-}
+         }
 
 
 .methods{
@@ -579,6 +623,8 @@ justify-content:space-evenly ;
 
         }
     }
+
+
 }
 
 footer{
@@ -599,9 +645,9 @@ footer{
     }
 }
 
-}
 
 
+ }
 
 /* Tabelet */
 @media screen and (min-width: 768px) {
@@ -674,8 +720,10 @@ footer{
         padding: 40px;
               }
       }
-    }
 
+
+
+    }
 
 
 /* Desktop */
